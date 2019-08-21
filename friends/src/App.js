@@ -10,6 +10,7 @@ const App = (props) => {
   return (
     <div className="App">
       <h1>Friends Login!</h1>
+      <Link to="/protected">Go to friends list!</Link>
       <PrivateRoute exact path="/protected" component={MainContent} />
       <Route path="/" component={Login} />
     </div>
